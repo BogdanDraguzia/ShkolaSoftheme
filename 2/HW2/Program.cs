@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
+
 
 namespace HW2
 {
@@ -10,20 +8,44 @@ namespace HW2
     {
         static void Main(string[] args)
         {
-            String num1, num2;
-            num1 = "";num2 = "abc";
-            num1 += num2;
-            ConsoleKeyInfo keyInfo = new ConsoleKeyInfo();
-            while ( keyInfo.Key!=ConsoleKey.Enter)
+            double a, b;
+            Console.WriteLine("Press Enter after every number and also after math operator!" +
+                              "\n--------------------------------------------------------------------------------------------");
+            try
             {
-                //keyInfo = new ConsoleKeyInfo();
-                Console.WriteLine("Iteration");
-            }
-            Double.TryParse("123,45", out double result);
+                a = Double.Parse(Console.ReadLine());
+                var sign = Console.ReadLine().Replace(" ", "");
+                b = Double.Parse(Console.ReadLine());
+                switch (sign)
+                {
+                    case "+":
+                        Console.Write("{0:0.##}",(a + b)); // {0:00.00} вывел бы ровно два знака после запятой
+                        break;
+                    case "-":
+                        Console.Write("{0:0.##}",a - b);
+                        break;
+                    case "*":
+                        Console.Write("{0:0.##}",a * b);
+                        break;
+                    case "/":
+                        Console.Write("{0:0.##}", a / b);
+                        break;
+                    default:
+                        throw new IOException("Bad mathematical operator");
+                }
 
-            Console.WriteLine(result*2);
-            
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+
             Console.ReadKey();
+
+
         }
+
+       
     }
 }
