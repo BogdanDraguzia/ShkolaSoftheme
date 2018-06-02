@@ -1,0 +1,48 @@
+﻿<Window x:Class="HW3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HW3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="268" VerticalAlignment="Top" Width="518" Panel.ZIndex="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="63*"/>
+                <ColumnDefinition Width="110*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="38*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="30*"/>
+
+
+            </Grid.RowDefinitions>
+            <TextBlock Margin="10.2,0,179.4,0.4" TextWrapping="Wrap" Text="Registration form" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.502,0.023" Height="38" VerticalAlignment="Center" Grid.Column="1"/>
+            <Label Content="First name (only letters, &lt;255)" HorizontalAlignment="Left" Margin="10,0.2,0,0" Grid.Row="2" VerticalAlignment="Top" RenderTransformOrigin="0.45,-0.098" Height="26" Width="169" FontWeight="Bold"/>
+            <Label Content="Last name (only letters, &lt;255)" HorizontalAlignment="Left" Margin="10,0.6,0,0" Grid.Row="3" VerticalAlignment="Top" RenderTransformOrigin="-0.032,0.447" Height="26" Width="179" Grid.ColumnSpan="2" FontWeight="Bold"/>
+            <Label Content="Birth date" HorizontalAlignment="Left" Margin="10,2,0,0" Grid.Row="4" VerticalAlignment="Top" Height="26" Width="179" Grid.ColumnSpan="2" FontWeight="Bold"/>
+            <Label Content="Gender (male or female)" HorizontalAlignment="Left" Margin="10,3.4,0,0" Grid.Row="5" VerticalAlignment="Top" Height="26" Width="179" Grid.ColumnSpan="2" FontWeight="Bold"/>
+            <Label Content="Email (with@, &lt;255)" HorizontalAlignment="Left" Margin="10,29.4,0,0" Grid.Row="5" VerticalAlignment="Top" Height="29" Width="179" Grid.ColumnSpan="2" Grid.RowSpan="2" FontWeight="Bold"/>
+            <Label Content="Phone number" HorizontalAlignment="Left" Margin="10,28.8,0,0" Grid.Row="6" VerticalAlignment="Top" Height="30" Width="179" Grid.RowSpan="2" Grid.ColumnSpan="2" FontWeight="Bold"/>
+            <Label Content="Additional info (&lt;2000)" HorizontalAlignment="Left" Margin="10,30.2,0,0" Grid.Row="7" VerticalAlignment="Top" Grid.RowSpan="3" Height="30" Width="179" Grid.ColumnSpan="2" FontWeight="Bold"/>
+
+            <TextBox x:Name="FirstNameInput" Grid.Column="1" HorizontalAlignment="Left" Height="31" Margin="10.2,0.4,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Grid.RowSpan="2"/>
+            <TextBox x:Name="LastNameInput" Grid.Column="1" HorizontalAlignment="Left" Height="29" Margin="10.2,1,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" />
+            <TextBox x:Name="GenderInput" Grid.Column="1" HorizontalAlignment="Left" Height="28" Margin="10.2,0.2,0,0" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" />
+            <TextBox x:Name="EmailInput" Grid.Column="1" HorizontalAlignment="Left" Margin="10.2,28.2,0,0.4" Grid.Row="5" TextWrapping="Wrap" Width="214" Grid.RowSpan="2"/>
+            <TextBox x:Name="PhoneNumberInput" Grid.Column="1" HorizontalAlignment="Left" Height="31" Margin="10.2,30.8,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Grid.RowSpan="3" RenderTransformOrigin="0.493,0.652"/>
+            <TextBox x:Name="AdditionalInfoInput" Grid.Column="1" HorizontalAlignment="Left" Height="31" Margin="10.2,0.2,0,0" Grid.Row="8" TextWrapping="Wrap" VerticalAlignment="Top" Width="214"/>
+            <DatePicker x:Name="BirthDateInput" Grid.Column="1" HorizontalAlignment="Left" Margin="10.2,30,0,0" Grid.Row="3" Grid.RowSpan="3" VerticalAlignment="Top" RenderTransformOrigin="0.553,-0.109" Height="31" Width="214"/>
+        </Grid>
+        <Button x:Name="ConfirmButton" Content="Confirm" HorizontalAlignment="Left" Margin="154,278,0,0" VerticalAlignment="Top" Width="189" Height="33" Click="ConfirmButton_Click" FontWeight="Bold" FontSize="14" FontFamily="Yu Gothic UI"/>
+
+    </Grid>
+</Window>
