@@ -6,7 +6,17 @@
         xmlns:local="clr-namespace:HW4_WPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+    <Grid x:Name="GridPanel" RenderTransformOrigin="0.5,0.5" OpacityMask="{x:Null}">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FF5CAFCE" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="DateTextBox" HorizontalAlignment="Left" Height="30" Margin="174,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199" Text="05/05/2005" />
+        <Button Content="Find out a sign" HorizontalAlignment="Left" Margin="174,263,0,0" VerticalAlignment="Top" Width="199" Height="36" Click="Button_Click"/>
+        <Image x:Name="SignImage" HorizontalAlignment="Left" Height="164" Margin="174,10,0,0" VerticalAlignment="Top" Width="190" Source="/images/img.jpg"/>
+        <TextBlock x:Name="Result" HorizontalAlignment="Left" Margin="174,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199" Height="25" Foreground="#FFBBE7C8" FontWeight="Bold" FontSize="14"/>
+
     </Grid>
 </Window>
