@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1.csproj", "{A458F378-BBD2-46F3-AA4C-E9CD6D697904}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting algorithm", "..\Sorting algorithm\Sorting algorithm.csproj", "{3E2183AA-A4F0-4957-8202-4A033BBB354D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartArray", "SmartArray\SmartArray.csproj", "{943D03ED-2BB8-4783-9872-87B6EA171A97}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A458F378-BBD2-46F3-AA4C-E9CD6D697904}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A458F378-BBD2-46F3-AA4C-E9CD6D697904}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A458F378-BBD2-46F3-AA4C-E9CD6D697904}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E2183AA-A4F0-4957-8202-4A033BBB354D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E2183AA-A4F0-4957-8202-4A033BBB354D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E2183AA-A4F0-4957-8202-4A033BBB354D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E2183AA-A4F0-4957-8202-4A033BBB354D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{943D03ED-2BB8-4783-9872-87B6EA171A97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{943D03ED-2BB8-4783-9872-87B6EA171A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{943D03ED-2BB8-4783-9872-87B6EA171A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{943D03ED-2BB8-4783-9872-87B6EA171A97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
