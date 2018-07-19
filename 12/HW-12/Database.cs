@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW_12
 {
-    static class Database
+   class Database:IDisposable
     {
         private static IUser[] Users;
 
@@ -75,6 +75,14 @@ namespace HW_12
             }
 
             return null;
+        }
+
+        public void Dispose()
+        {
+            foreach (var item in Users)
+            {
+                Console.WriteLine(item.GetFullInfo());
+            }
         }
     }
 }

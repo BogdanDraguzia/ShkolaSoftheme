@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace HW_12
@@ -12,6 +13,8 @@ namespace HW_12
 
         static void Main(string[] args)
         {
+            var database = new Database();
+            GC.Collect(1, GCCollectionMode.Forced, false);
             while (true)
             {
                 Console.WriteLine("Write your name or email: ");
@@ -43,9 +46,12 @@ namespace HW_12
                         Password = password
                     });
                 }
-
+                
             }
-            
+            database.Dispose();
+            Thread.Sleep(4000);
+
+
         }
         
     }
